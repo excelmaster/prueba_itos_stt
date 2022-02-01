@@ -30,16 +30,14 @@
                 
                     <div class="form-group">
                       <input type="number" class="form-control" id="byear" min="0" required>
-                      <div class="valid-feedback">Válido</div>
-                      <div class="invalid-feedback">Ingrese un número mayor a cero</div>
+                      <div id="error_year" class="invalid-feedback">Ingrese un número mayor a cero</div>
                     </div>
                     <input type="button" class="btn btn-primary" value="Comprobar año bisiesto" onclic="annioBisiesto()" id="my">
                     <!-- <button onclick="anniobisiesto()" class="btn btn-primary"  id="comprobar" role="button">COMPROBAR</button> -->
                           
               </div>
               <div class="card-footer">
-                <div class="alert alert-info" role="alert" id="rbisiesto">
-                    
+                <div class="alert alert-light" role="alert" id="rbisiesto">
                 </div>
               </div>
             </div>
