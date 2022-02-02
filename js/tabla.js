@@ -1,4 +1,4 @@
-/* calculo año bisiesto  */
+/* render de tablas  */
 
 $('#btn_tabla').click(function(){
     $('#error_filas').hide();
