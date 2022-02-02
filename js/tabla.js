@@ -3,6 +3,7 @@
 $('#btn_tabla').click(function(){
     $('#error_filas').hide();
     $('#error_columnas').hide();
+    //toma las variables
     var filas = $('#filas').val();
     var columnas = $('#columnas').val();
     if(filas == ""){$('#error_filas').show(); };
@@ -14,6 +15,7 @@ $('#btn_tabla').click(function(){
     };
 
     codigo += '</tr></thead><tbody>'
+    //render
     for(var j = 1 ; j<= filas; j++){
         codigo += '<tr>';
             for(var x = 1 ; x<=columnas; x++){

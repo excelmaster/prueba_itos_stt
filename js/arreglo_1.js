@@ -1,8 +1,9 @@
-/* calculo año bisiesto  */
+/* genera 20 posiciones de numeros  */
 
 $('#btnArreglo-1').click(function(){
-    
+    //crea los números aleatorios
     let aleatorios = Array.from({length: 20}, () => Math.floor(Math.random() * (100-1) + 1 )) ;
+    //render
     var codigo = '<table class="table table-bordered"><thead><tr>';
     for(var i = 0; i<20;i++){
         codigo += '<th scope="col" id="num_' + i + '">' + aleatorios[i] + '</th>';
@@ -13,11 +14,13 @@ $('#btnArreglo-1').click(function(){
 });
 
 $('#btnOrdena-1').click(function(){
+    //trae los numeros
     var numeros = new Array(20);
     for(var i = 0; i<20;i++){
         numeros[i]= $('#num_' + i).text();
     };
     
+    //ordena el array
     var ordenados = new Array(1);
     ordenados[0]=0;
     var ordenados_fin = new Array(1);
@@ -62,7 +65,7 @@ $('#btnOrdena-1').click(function(){
             }
         }
     }
-
+    //render
     var codigo = '<table class="table table-bordered"><thead><tr>';
     for(var i = 0; i<20;i++){
         codigo += '<th scope="col" id="num_' + i + '">' + ordenados[i] + '</th>';

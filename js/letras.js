@@ -24,7 +24,7 @@ function arrayLetras(){
         $('#array_' + element).html(codigo);
         $('#matriz_' + element).text(result.toLocaleString());    
     });
-
+    //recrea los array
     let matriz_a = $('#matriz_a').text();
     array_a= matriz_a.split(',');
     let matriz_b = $('#matriz_b').text();
