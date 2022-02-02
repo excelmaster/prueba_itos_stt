@@ -16,7 +16,7 @@
 
     <div class="container-fluid">
 	<div class="row">
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-secondary" role="alert">
         PRUEBA ITOS - HUMBERTO FIERRO
         </div>
 		<div class="col-md-4">
@@ -32,7 +32,7 @@
                       <input type="number" class="form-control" id="byear" min="0" required>
                       <div id="error_year" class="invalid-feedback">Ingrese un número mayor a cero</div>
                     </div>
-                    <input type="button" class="btn btn-primary" value="Comprobar año bisiesto" id="btn_bis">    
+                    <input type="button" class="btn btn-success" value="Comprobar año bisiesto" id="btn_bis">    
               </div>
               <div class="card-footer">
                 <div class="alert alert-light" role="alert" id="rbisiesto">
@@ -58,7 +58,7 @@
                         <input type="number" class="form-control" id="columnas" min="0" required>
                         <div id="error_columnas" class="invalid-feedback">Ingrese un número mayor a cero</div>
                         </div>
-                        <input type="button" class="btn btn-primary" value="Generar tabla"  id="btn_tabla"> 
+                        <input type="button" class="btn btn-success" value="Generar tabla"  id="btn_tabla"> 
                 </div>
             </div>
 		</div>
@@ -72,9 +72,13 @@
 		</div>
 	</div>
 	<div class="row">
+        <div class="alert alert-primary" role="alert">
+            Generar un arreglo con 20 números aleatorios de 1 a 100 y luego organizarlo de menor a
+mayor sin utilizar la sentencia .sort()
+        </div>
 		<div class="col-md-6">
             <div class="card">
-              <div class="card-header bg-success">
+              <div class="card-header bg-warning">
                 Generar arreglo aleatorio
               </div>
               <div class="card-body">
@@ -82,40 +86,88 @@
                 <p class="card-text">Para generar el arreglo dé clic en el botón "Generar arreglo".</p>
                 <div class="row" id="sinordenar_1"></div>
                 <div class="row" id="ordenado_2"></div>
-                <input type="button" id="btnArreglo-1"  class="btn btn-primary" value="Generar arreglo">
+                <input type="button" id="btnArreglo-1"  class="btn btn-success" value="Generar arreglo">
               </div>
             </div>
 		</div>
 		<div class="col-md-6">
             <div class="card" >
-                <div class="card-header bg-success">
+                <div class="card-header bg-warning">
                   Arreglo aleatorio Ordenado
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">arreglo de 20 posiciones</h5>
                   <p class="card-text">Para ordenar el arreglo dé clic en el botón "Ordenar arreglo".</p>
                   <div class="row" id="ordenado_1"></div>
-                  <input type="button" id="btnOrdena-1"  class="btn btn-primary" value="Ordenar arreglo">
+                  <input type="button" id="btnOrdena-1"  class="btn btn-success" value="Ordenar arreglo">
                 </div>
               </div>
 		</div>
 	</div>
 	<div class="row">
+        <div class="alert alert-primary" role="alert">
+            Generar dos arreglos A y B con 10 valores aleatorios de letras del abecedario y mostrar los
+siguientes resultados
+        </div>
 		<div class="col-md-3">
+            <div class="card">
+              <div class="card-header bg-warning">
+                <b>Arreglos de letras</b> 
+              </div>
+              <div class="card-body">
+                  <h6>Array A</h6>
+                  <div id="array_a"></div>
+                  <h6>Array B</h6>
+                  <div id="array_b"></div>
+              </div>
+              <p id="matriz_a" hidden></p>
+              <p id="matriz_b" hidden></p>
+              <input type="button" class="btn btn-primary" value="Generar arreglos A" onclick="arrayLetras();">
+            </div>
 		</div>
-		<div class="col-md-3">
-		</div>
-		<div class="col-md-6">
+		<div class="col-md-9">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-7">
+                    <div class="card">
+                      <div class="card-header bg-warning">
+                        A Unión B
+                      </div>
+                      <div class="card-body" id="union">
+                        
+                      </div>
+                    </div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-5">
+                    <div class="card">
+                        <div class="card-header bg-warning">
+                          A intersección B
+                        </div>
+                        <div class="card-body" id="inter">
+                          
+                        </div>
+                      </div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-7">
+                    <div class="card">
+                        <div class="card-header bg-warning">
+                          A diferencia B
+                        </div>
+                        <div class="card-body" id="diff">
+                          
+                        </div>
+                      </div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-5">
+                    <div class="card">
+                        <div class="card-header bg-warning">
+                          A Unión B
+                        </div>
+                        <div class="card-body">
+                          lshdfds
+                        </div>
+                      </div>
 				</div>
 			</div>
 		</div>
@@ -135,5 +187,5 @@
     <script src="./js/bisiesto.js"></script>
     <script src="./js/tabla.js"></script>
     <script src="./js/arreglo_1.js"></script>
-    
+    <script src="./js/letras.js"></script>
 </html>
